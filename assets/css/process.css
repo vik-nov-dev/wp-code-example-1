@@ -1,0 +1,37 @@
+.jumbotron { background-color: #edebe5; clear: both; display: block; padding: 5% 0px; text-align: center; width: 100%; }
+.jumbotron h3 { color: #595348; font-size: 32px; margin-bottom: 15px; }
+.jumbotron p { margin: 0px auto; max-width: 645px; }
+
+.main { clear: both; margin: 33px 0px; width: 100%; }
+.main .row.first { display: block; }
+.main .intro { float: right; text-align: right; }
+.main .content { margin: 20% auto; max-width: 380px; }
+
+.main a.link { color: #8d857c; font-size: 14px; font-weight: 500; text-transform: uppercase; }
+.main a.link .fa { font-size: 16px; transition: all 1.3s; }
+.main a.link:hover { color: #b74a15; transition: all 1.3s; }
+
+/*-------------------
+    Media Query
+---------------------------*/
+
+@media only screen and (max-width: 767px) {
+	.jumbotron h2 { font-size: 24px; }
+	.main { margin: 0px; }
+	.main .row.first { display: flex; }
+	.main .col { flex-basis: auto; }
+	.main .intro { text-align: left; }
+	.get-touch h3 { font-size: 22px; }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.jumbotron h2 { font-size: 24px; }
+	.main { margin: 33px 0px; }
+	.main .content { margin: 20px 0px; }
+	.get-touch h3 { font-size: 24px; }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}

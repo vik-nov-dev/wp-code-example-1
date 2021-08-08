@@ -1,0 +1,31 @@
+.first { display: block; }
+.pic { float: right; }
+.intro { float: left; }
+
+.careers { clear: both; padding: 12% 30px 50px 0px; width: 100%; }
+.careers h3 { font-size: 30px; text-transform: capitalize; }
+.careers .fa { background-color: #9d958d; border-radius: 50%; color: #fff; font-size: 18px; display: inline-block; height: 30px; line-height: 30px; margin-left: 5px; text-align: center; width: 30px; }
+.careers .fa:hover { background-color: #807972; color: #fff; }
+
+.job { color: #9c958c; display: inline-block; font-size: 16px; font-weight: 500; margin-bottom: 10px; text-transform: uppercase; }
+.job .fa { font-size: 20px; margin-left: 5px; }
+.job:hover { color: #807972; }
+
+/*-------------------
+    Media Query
+---------------------------*/
+
+@media only screen and (max-width: 767px) {
+	.pic, .intro { float: none; }
+	.careers { padding: 50px 0px; }
+	.careers h3 { font-size: 24px; }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}

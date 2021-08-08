@@ -1,0 +1,55 @@
+.jumbotron { background-color: #edebe5; clear: both; display: block; padding: 5% 0px; text-align: center; width: 100%; }
+.jumbotron h3 { color: #595348; font-size: 32px; margin-bottom: 15px; }
+.jumbotron p { margin: 0px auto; max-width: 645px; }
+
+.members { clear: both; width: 100%; }
+.members .col:nth-child(2n+1) { margin-top: 100px; }
+
+.team { clear: both; margin-bottom: 33px; position: relative; width: 100%; }
+.team img { width: 100%; }
+.team .discr { background-color: rgba(255, 255, 255, 0.8); padding: 0px 10px; position: absolute; bottom: 15px; left: 15px; right: 15px; top: initial; text-align: center; width: auto; z-index: 1; transition: all 0.5s ease-in-out 0s; overflow: hidden; }
+.team:hover .discr { top: 15px; transition: all 0.5s ease-in-out 0s; }
+.team .discr h3 { color: #595348; font-size: 22px; margin: 10px 0px; text-transform: capitalize; letter-spacing:1px; line-height:1; }
+.team .discr h3 span { font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; text-transform: uppercase; color:#8d857c;  }
+.team .discr p { font-size: 12px; visibility: hidden; }
+.team:hover .discr p { visibility: visible; }
+
+.team .discr .hide { display: none; opacity: 0; transition: all 0.5s ease-in-out 0s; }
+.team:hover .discr .hide { display: block; opacity: 1; transition: all 0.5s ease-in-out 0s; }
+
+
+/*-------------------
+    Media Query
+---------------------------*/
+
+@media only screen and (max-width: 767px) {
+	.jumbotron h3 { font-size: 24px; }
+	.members .col { flex-basis: auto; }
+	.members .col:nth-child(2n+1) { margin-top: 0px; }
+	.get-touch h3 { font-size: 22px; }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.jumbotron h2 { font-size: 24px; }
+	.team .discr { left: 5px; right: 5px; bottom: 5px; padding: 5px; }
+	.team .discr:hover { top: 5px; }
+	.team .discr h3 { margin: 5px 0px; font-size: 15px; }
+	.team .discr h3 span { font-size: 10px; }
+	.team .discr p { font-size: 10px; }
+	.get-touch h3 { font-size: 24px; }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.team .discr { left: 5px; right: 5px; bottom: 5px; padding: 5px; }
+	.team .discr:hover { top: 5px; }
+	.team .discr h3 { margin: 5px 0px; font-size: 18px; }
+	.team .discr h3 span { font-size: 12px; }
+	.team .discr p { font-size: 10px; }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1299px) {
+	.team .discr h3 { margin: 5px 0px; font-size: 22px; }
+	.team .discr h3 span { font-size: 12px; }
+	.team .discr p { font-size: 12px; }
+}

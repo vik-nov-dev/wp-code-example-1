@@ -1,0 +1,55 @@
+.jumbotron { background-color: #edebe5; clear: both; display: block; padding: 5% 0px; text-align: center; width: 100%; }
+.jumbotron h3 { color: #595348; font-size: 32px; margin-bottom: 15px; }
+.jumbotron p { margin: 0px auto; max-width: 645px; }
+
+.showroom { clear: both; display: block; width: 100%; padding-bottom: 2rem; }
+.showroom h1 {font-size: 42px;}
+.showroom p {font-weight: 500;font-size: 1rem;}
+.showroom a {font-weight: 600;}
+.showroom .row { display:flex; }
+.showroom .picbg { background-size:cover; background-position:center; }
+
+.content { margin: 25% auto 0px; max-width: 380px; }
+.content h1 { text-transform: capitalize; margin-bottom:20px; }
+.content a {color: inherit;}
+
+.mid { background-color: #ece9e3; clear: both; display: block; margin-bottom: 33px; padding: 5% 0px; width: 100%; }
+.reorder > div:first-child {order:2;}
+.reorder > div:last-child {order:1;}
+
+.contact { background-color: #ece9e3; clear: both; display: block; margin-bottom: 33px; padding: 5% 0px; width: 100%; }
+.contact h3 { text-transform: capitalize; margin-bottom: 25px; }
+.contact .form-control { background: transparent; border-color: #8d857c; border-radius: 0px; color: #8d857c; font-family: 'Montserrat', sans-serif; font-size: 14px; }
+.contact textarea.form-control { height: 136px; }
+.contact .btn-submit { background-color: #9c958c; border-radius: 0px; color: #fff; font-size: 12px; float: right; text-transform: uppercase; max-width: 125px; width: 100%; }
+.contact .btn-submit:hover { background-color: #807972; color: #fff; }
+.contact span.wpcf7-list-item {margin-left: 0;}
+.contact span.wpcf7-not-valid-tip {font-size: 12px;}
+.contact div.wpcf7-validation-errors, .contact div.wpcf7-acceptance-missing {margin: 0;border: 2px solid #9c958c;}
+
+.acf-map {width: 100%;padding-top: 60%;border: none;margin: 0;}
+.acf-map img {max-width: inherit !important;}
+.acf-map .badge {text-align: left;}
+
+/*-------------------
+    Media Query
+---------------------------*/
+
+@media only screen and (max-width: 767px) {
+	.showroom .col, .contact .col { flex-basis: auto; }
+	.jumbotron h2 { font-size: 24px; }
+	.mid .row.first { display: flex; }
+	.contact .btn-submit { float: none; max-width: 100%; }
+	.reorder > div:first-child {order:1;}
+	.reorder > div:last-child {order:2;}
+	.showroom .picbg { min-height:250px; }
+	.content { margin-top:5%; }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.jumbotron h3 { font-size: 24px; }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
